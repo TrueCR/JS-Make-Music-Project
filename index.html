@@ -1,15 +1,28 @@
 <html>
 <head>
-    <title>My Title</title>
+    <title>JS Make Music Project</title>
     <script type="text/javascript" src="script.js"></script>
     <link rel=stylesheet href="stylesheet.css" type="text/css">
 </head>
     
     <body>
-
-        <textarea id="text">Write your music here. This is demo text. This is a demo long sentence since it has for than a couple of words. Not this! This one is kind of long maybe? Yet this one, this 1 sentence, this is going to be so long and amazing that, just maybe, you'll get tired of counting the words.</textarea>
-
-        <button onclick=Music()>Button</button>
+    <h1>JS Make Music Project</h1>    
+    
+    <div>
+        <textarea style="border:4px solid Purple" update rows="25" cols="80" placeholder="Type Here!">
+        </textarea>
+    </div>
+        
+<!-- Button For Color Selection -->
+        <div class="dropdown">
+            <button onclick="dropDownFunction()" class="dropColors">Color Selection</button>
+            <div id="colorSelection" class="dropdown-content">
+                <a href="Red">Link 1</a>
+                <a href="Green">Link 2</a>
+                <a href="Blue">Link 3</a>
+                <a href="Yellow">Link 4</a>
+            </div>
+        </div>
      
 <p></p>
     </body>
