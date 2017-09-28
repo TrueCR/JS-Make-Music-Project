@@ -15,12 +15,15 @@
         <textarea style="border:4px solid Black" update rows="25" cols="80" placeholder="Type Here!">
         </textarea>
     </div>
+    
         
+        
+    <p></p>    
     <script>
-        var txt = document.querySelector ('textarea');
-        var out = docuement.querySelector ('p');
+        var txt = document.querySelector('textarea');
+        var out = document.querySelector('p');
         
-        text.addEventListener('input', undateOutput);
+        txt.addEventListener('input', updateOutput);
         
         function updateOutput() {
             out.innerHTML = txt.value;
