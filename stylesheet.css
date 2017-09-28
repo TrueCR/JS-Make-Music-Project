@@ -2,3 +2,29 @@ p {
     font-family: arial;
 }
 
+#output {
+  font-family: Arial;
+  line-height: 2rem;
+  margin: 10%;
+}
+
+#output span {
+  padding: 4px 2px;
+  margin-right: 6px;
+}
+
+#output .shortest {
+  background-color: rgba(255, 255, 0, 0.44);
+}
+#output .short {
+  background-color: rgba(255, 192, 203, 0.62);
+}
+#output .medium {
+  background-color: rgba(244, 67, 54, 0.6);
+}
+#output .long {
+  background-color: rgba(128, 224, 31, 0.59);
+}
+#output .longest {
+  background-color: rgba(0, 255, 255, 0.39);
+}
