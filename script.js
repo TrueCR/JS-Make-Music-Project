@@ -1,30 +1,9 @@
-function highlight() {
-  var text = document.querySelector('textarea').val();
+function music() {
+var textAreaInput = document.getElementById("text").value;
+    var output = document.getElementById("testingp");
+    var result = document.getElementById('text').value.match( /[^.!?]+[.!?]+/g );
+    var words = textAreaInput.split(" ");    
 
-  var sentences = text.split('\.?!');
-  var html = '';
-  sentences.forEach(function(sentence) {
-    sentence = sentence.trim();
-    if (!sentence) {
-      return;
-    }
-    var className = 'longest';
-    var count = sentence.split(" ").length;
-    if (count < 3) {
-      className = 'shortest';
-    } else if (count < 5) {
-      className = 'short';
-    } else if (count == 5) {
-      className = 'medium';           
-    } else if (count < 20) {
-      className = 'long';
-    }
-    html += '<span class="'+className+'">'+sentence+'. </span>';
-  });
-
-  docment.getElementById('#output').innerHTML(html);
+    alert(result[2].split(" ").length);  
     
 }
-
-highlight();
-document.querySelector('textarea').on('keyup', highlight);
